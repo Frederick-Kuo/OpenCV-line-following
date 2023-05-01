@@ -49,6 +49,9 @@ int main( int argc, char** argv )
         Mat green;
         cvtColor(frame2,green,COLOR_BGR2HSV);
         //inRange(green,Scalar(40,50,50), Scalar(80,255,255),green); //GREEN
+	//inRange(color,Scalar(0,50,50), Scalar(20,255,255),detect); //RED
+	//inRange(color,Scalar(100,50,50), Scalar(140,255,255),detect); //BLUE
+	//inRange(color,Scalar(25,50,50), Scalar(35,255,255),detect); //YELLOW
         inRange(green,Scalar(0,0,0), Scalar(179,255,51),green); //BLACK
 
 
